@@ -1,0 +1,30 @@
+bin/
+
+# JetBrains IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+out/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Go specific
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# OS specific
+.DS_Store
+Thumbs.db

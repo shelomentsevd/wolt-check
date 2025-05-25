@@ -1,0 +1,17 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "./queries/*"
+    schema: "../migrations"
+    gen:
+      go:
+        package: "postgres"
+        sql_package: "pgx/v5"
+        out: "postgres"
+        overrides:
+          - db_type: "serial"
+            go_type: "int"
+            nullable: false
+          - db_type: "pg_catalog.int4"
+            go_type: "int"
+            nullable: false
